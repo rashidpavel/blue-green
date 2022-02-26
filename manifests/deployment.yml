@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: rashidpavelbluegreen 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rashidpavelbluegreen
+  template:
+    metadata:
+      labels:
+        app: rashidpavelbluegreen 
+    spec:
+      containers:
+        - name: rashidpavelbluegreen 
+          image: assignmentselise.azurecr.io/rashidpavelbluegreen
+          ports:
+          - containerPort: 80
