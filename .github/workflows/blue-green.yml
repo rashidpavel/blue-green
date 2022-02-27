@@ -47,6 +47,7 @@ jobs:
         with:
           namespace: default
           manifests: |
+            ./kubernetes/ingress.yaml
             ./kubernetes/service.yaml
             ./kubernetes/blue-deploy.yaml
           images: |
