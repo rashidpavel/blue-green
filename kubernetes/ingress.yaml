@@ -10,5 +10,5 @@ spec:
       paths:
         - path: /
           backend:
-            serviceName: apple-service
+            serviceName: nginx
             servicePort: 5678
