@@ -45,7 +45,7 @@ jobs:
       - name: Deploy app
         uses: azure/k8s-deploy@v1.3
         with:
-          namespace: default
+          namespace: ingress-basic
           manifests: |
             ./kubernetes/ingress.yaml
             ./kubernetes/service.yaml
@@ -80,7 +80,7 @@ jobs:
         uses: azure/k8s-deploy@v1.3
         if: ${{ success() }}
         with:
-          namespace: default
+          namespace: ingress-basic
           manifests: |
             ./kubernetes/ingress.yaml
             ./kubernetes/service.yaml
@@ -95,7 +95,7 @@ jobs:
         uses: azure/k8s-deploy@v1.3
         if: ${{ failure() }}
         with:
-          namespace: default
+          namespace: ingress-basic
           manifests: |
             ./kubernetes/ingress.yaml
             ./kubernetes/service.yaml
