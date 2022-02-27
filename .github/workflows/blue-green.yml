@@ -82,6 +82,7 @@ jobs:
         with:
           namespace: default
           manifests: |
+            ./kubernetes/ingress.yaml
             ./kubernetes/service.yaml
             ./kubernetes/green-deploy.yaml
           images: |
