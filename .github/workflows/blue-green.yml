@@ -50,7 +50,7 @@ jobs:
             ./kubernetes/service.yaml
             ./kubernetes/blue-deploy.yaml
           images: |
-            assignmentselise.azurecr.io/green-nginx:2
+            assignmentselise.azurecr.io/green-nginx:1
           strategy: blue-green
           traffic-split-method: pod
           action: deploy  #deploy is the default; we will later use this to promote/reject
@@ -84,7 +84,7 @@ jobs:
             ./kubernetes/service.yaml
             ./kubernetes/green-deploy.yaml
           images: |
-            assignmentselise.azurecr.io/green-nginx:2
+            assignmentselise.azurecr.io/green-nginx:1
           strategy: blue-green
           traffic-split-method: pod
           action: promote  #deploy is the default; we will later use this to promote/reject
@@ -98,7 +98,7 @@ jobs:
             ./kubernetes/service.yaml
             ./kubernetes/blue-deploy.yaml
           images: |
-            assignmentselise.azurecr.io/green-nginx:2
+            assignmentselise.azurecr.io/green-nginx:1
           strategy: blue-green
           traffic-split-method: pod
           action: reject  #deploy is the default; we will later use this to promote/reject
