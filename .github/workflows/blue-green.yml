@@ -47,7 +47,6 @@ jobs:
         with:
           namespace: ingress-basic
           manifests: |
-            ./kubernetes/ingress.yaml
             ./kubernetes/service.yaml
             ./kubernetes/blue-deploy.yaml
           images: |
@@ -82,7 +81,6 @@ jobs:
         with:
           namespace: ingress-basic
           manifests: |
-            ./kubernetes/ingress.yaml
             ./kubernetes/service.yaml
             ./kubernetes/green-deploy.yaml
           images: |
@@ -97,7 +95,6 @@ jobs:
         with:
           namespace: ingress-basic
           manifests: |
-            ./kubernetes/ingress.yaml
             ./kubernetes/service.yaml
             ./kubernetes/blue-deploy.yaml
           images: |
